@@ -1,0 +1,71 @@
+:root {
+  --primary: hsl(37, 100%, 50%);
+  --fadet: hsl(0, 0%, 62%);
+  --light: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'space_obsessedregular';
+    src: url('../fonts/spaceobsessed-5dzv-webfont.woff2') format('woff2'),
+         url('../fonts/spaceobsessed-5dzv-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+   font-family: 1.7rem;
+}
+body {
+  background: linear-gradient(159deg, rgba(91,255,168,1) 0%, rgba(0,212,255,1) 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400vh;
+  font-family: sans-serif;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+nav{
+    height: 4rem;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: space_obsessedregular;
+    font-size: 2rem;
+    color: var(--primary);
+}
+header{
+    padding-top: 5rem;
+}
+header h4{
+    padding-top: 1rem;
+}
+header span{
+    font-family: space_obsessedregular;
+    font-size: 2rem;
+}
+.frederick{
+    font-size: 1.4rem;
+    cursor: url("../img/cursor.png"), auto;
+}
+
+.btn {
+  background-color: var(--primary);
+  border: 4px var(--primary) solid;
+  padding: 10px 20px;
+}
+.btn a,
+i {
+  color: var(--light);
+  text-decoration: none;
+}
+.btn:hover,
+.btn:hover a,
+i {
+  background-color: var(--light);
+  color: var(--primary);
+}
