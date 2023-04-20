@@ -14,7 +14,13 @@ h1{
     font-size: 2rem;
 }
 h2{
-   font-family: 1.7rem;
+   font-size: 1.7rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.2rem;
 }
 body {
   background: linear-gradient(159deg, rgba(91,255,168,1) 0%, rgba(0,212,255,1) 100%);
@@ -56,16 +62,27 @@ header span{
 .btn {
   background-color: var(--primary);
   border: 4px var(--primary) solid;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 .btn a,
 i {
   color: var(--light);
   text-decoration: none;
 }
+img{
+  margin: 10px 0px ;
+}
 .btn:hover,
 .btn:hover a,
 i {
   background-color: var(--light);
   color: var(--primary);
+}
+footer{
+  margin-top: 3rem;
+  text-align: center;
+  background-color: white;
+}
+section{
+  margin-top: 1rem;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Toturial FlappyBird</title>
 </head>
+
 <body>
     <nav>
-       <h1>Workshop tutorial - Start To Code</h1> 
+        <h1>Workshop tutorial - Start To Code</h1>
     </nav>
     <header class="container info">
         <h2>Witness the rebirth of… <span>FlappyBird</span></h2>
-        <p>Voor onze eerste opdracht voor @work2 besloten Gilles en Glen de zeer populaire game flappy bird na te maken. Het jaar is 2013, Vine is het grootste social media platform, de harlem shake verovert de wereld en iedereen begon zich af te vragen: what does the fox say? Tijdens deze innoverende trends zette een simpele game de wereld plots naar zijn hand. In deze workshop stellen we de arteveldelized version voor met in de hoofdrol <span class="frederick">Frederick Roegiers.</span></p>
-        <h4>Download eerst het startbestand</h4>
-        <button class="btn">
-        <i class="fa fa-download"></i>
-        <a href="files/Start_to_code.zip" download="start to code">Download</a>
-    </button>
+        <p>Voor onze eerste opdracht voor @work2 besloten Gilles en Glen de zeer populaire game flappy bird na te maken.
+            Het jaar is 2013, Vine is het grootste social media platform, de harlem shake verovert de wereld en iedereen
+            begon zich af te vragen: what does the fox say? Tijdens deze innoverende trends zette een simpele game de
+            wereld plots naar zijn hand. In deze workshop stellen we de arteveldelized version voor met in de hoofdrol
+            <span class="frederick">Frederick Roegiers.</span></p>
         <p>Om jouw eigen flappy bird te coderen maken we gebruik van de volgende 3 talen:
             <ul>
                 <li>Html</li>
                 <li>Css</li>
                 <li>Javascript</li>
-            </ul> 
+            </ul>
             That’s it!</p>
     </header>
-    <section>
+    <main class="container">
+        <section>
+            <h3>Stap 1: onze folderstructuur</h3>
+            <p>Om een de uitvoering zo foutloos te laten verlopen maken we gebruik van een overzichtelijke
+                folderstructuur.</p>
 
-    </section>
-    
-    
-    
+            <p>Eerst starten we onze visual studio code op. Indien je geen visual studio code hebt kan je het hier
+                installeren: </p>
+
+            <button class="btn">
+                <i class="fa fa-download"></i>
+                <a href="https://code.visualstudio.com/" target="_blank">Download</a>
+            </button>
+            <h4>Stap 1.1: installeer de plug-in "open with live server"</h4>
+            <img src="img/liveserver--ss.png" alt="live server">
+            <sub>Download de volgende startcode</sub>
+            <button class="btn">
+                <i class="fa fa-download"></i>
+                <a href="files/Start_to_code.zip" download="start to code">Download</a>
+            </button>
+
+            <p>Na het downloaden van de startcode zou je deze files en folders moeten te zien krijgen (Geen zorgen,
+                de extensies van de files wordt later duidelijk).</p>
+            <img src="img/startcode.png" alt="">
+        </section>
+
+        <section>
+            <h3>Stap 2: onze elementen (HTML)</h3>
+            <p>We gaan van start in onze html file. In deze file schrijf je elementen die je later kan gebruiken en
+                bewerken door middel van css en javascript.</p>
+
+            <p>Kopieer onderstaande code in de lege html file.</p>
+
+            <p>In deze code link we de html file met de css en javascript(deze schrijven we later). We maken ook een
+                canvas element dat het bord zal vormen waar we flappy bird op spelen.</p>
+
+            <sub>Proficiat je html file is af! Makkelijk toch! 😁 (voorlopig) 🤫</sub>
+
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/7/embedded/html,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </section>
+
+        <section>
+            <h3>Stap 3: Ons ontwerp (CSS)</h3>
+            <p>In deze file maken we het ontwerp. In onze game is dit gelukkig ook vrij simpel. Kopieer onderstaande
+                code in de main.css file.</p>
+
+            <p>In deze code centreren we onze tekst en geven we de tekst een bepaald font. We stellen ook onze
+                achtergrond foto in. Deze halen we uit de images folder in die in het startbestand werd meegegeven</p>
+
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/7/embedded/css,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </section>
+
+        <section>
+            <h3>Stap 4: de functionaliteit (Javascript)</h3>
+            <p>in onderstaande code definiëren we de afmetingen van ons spel. Namelijk het bord waarop gespeeld
+                wordt. Eerst maken we onze variabelen aan die we later gebruiken in functies. De context maken we al aan
+                maar is voorlopig leeg. Later komen we hierop terug.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/10/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>we doen hetzelfde voor onze kleine Frederick. We zodat we hem te zien krijgen als hij aan het vliegen is.
+            </p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/12/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>nu definiëren we de pijpen we maken een lege array en stellen waarden in van de breedte en hoogte van de
+                pijpen.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/13/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>hierna maken we de physics van de game. We zorgen ervoor dat het scherm stilaan naar links verschuift. We
+                zorgen ook voor zwaartekracht zodat onze Frederick terug naar beneden valt.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/16/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <sub>proficiat je hebt al je variabelen gedefineerd op naar de functies 😁</sub>
+
+            <p>Vanaf hier gaan we onze functies definiëren. Met volgende code laden gaan we onze game effectief laden.
+                Eerst laden we het venster waar we op spelen, daarna onze kleine Frederick en de gevreesde obstakels.
+            </p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/17/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>met deze functie resetten we de game wanneer je de randen van het bord raakt. We voegen ook zwaartekracht
+                toe iedere keer dat je naar beneden begint te vallen.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/19/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>met deze functie berekenen we de score naarmate dat je vooruitgang maakt in een game. We zorgen er ook
+                voor dat wanneer kleine Frederick de obstakels raakt, het spel wordt gereset.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/21/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>in deze functie laten we de obstakels willekeurig inladen. We houden hierbij rekening dat er altijd een
+                gelijk opening is zodat Frederick er toch door kan fladderen.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/23/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>In deze functie zorgen we ervoor dat je Frederick kan besturen (in-game)</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/25/embedded/js,result/dark"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>deze functie analyseert of Frederick een botsing heeft gemaakt 🤕</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/godsfighter/qjn4vdhc/27/embedded/js,result/dark/"
+                allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+            <p>Aanschouw jouw eigen creatie. Zo makkelijk is het om een hit mobile game te maken. Nu kan je zoveel
+                spelen met Frederick als dat je wil. Stuur zeker jouw highscores op naar
+                <span>frederick.roegiers@arteveldehs.be.</span></p>
+
+            <p>Heb je de smaak van het developen te pakken? Laat je creativiteit de vrije loop en wie weet maak jij de
+                volgende hit game voor de mobiele markt.</p>
+        </section>
+
+    </main>
+    <footer>
+        <small>inspiratie van <a href="https://www.youtube.com/@KennyYipCoding">Kenny Yip Coding</a></small>
+    </footer>
 </body>
+
 </html>
